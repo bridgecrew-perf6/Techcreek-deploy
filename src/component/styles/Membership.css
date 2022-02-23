@@ -1,0 +1,359 @@
+/* Animations */
+@-webkit-keyframes slideInFromLeft {
+  0% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+    overflow: hidden;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+@keyframes slideInFromLeft {
+  0% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+    overflow: hidden;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@-webkit-keyframes slideInFromRight {
+  0% {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    overflow: hidden;
+  }
+}
+
+@keyframes slideInFromRight {
+  0% {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    overflow: hidden;
+  }
+}
+
+@-webkit-keyframes slideInFromTop {
+  0% {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+    overflow: hidden;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromTop {
+  0% {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+    overflow: hidden;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@-webkit-keyframes slideInFromBottom {
+  0% {
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+    overflow: hidden;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromBottom {
+  0% {
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+    overflow: hidden;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.membership--container .membership__box .layout {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 80%;
+  height: 70vh;
+  padding: 1%;
+}
+
+.membership--container .membership__box .layout .image--container {
+  width: 50%;
+  -webkit-animation: slideInFromTop 1s ease-in;
+          animation: slideInFromTop 1s ease-in;
+  overflow: hidden;
+}
+
+.membership--container .membership__box .layout .image--container .image {
+  width: 50%;
+  margin: 15% auto;
+}
+
+.membership--container .membership__box .layout .image--container .image img {
+  width: 100%;
+}
+
+.membership--container .membership__box .layout .form--container {
+  height: 450px;
+  overflow: hidden;
+  position: relative;
+  -webkit-animation: slideInFromBottom 1s ease-in;
+          animation: slideInFromBottom 1s ease-in;
+}
+
+.membership--container .membership__box .layout .form--container h3 {
+  color: white;
+  font-weight: 800;
+  padding-left: 4%;
+  padding-bottom: 4%;
+}
+
+.membership--container .membership__box .layout .form--container .trigers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding-left: 2%;
+}
+
+.membership--container .membership__box .layout .form--container .trigers button {
+  background-color: transparent;
+  outline: transparent;
+  border: none;
+  color: white;
+  width: 30%;
+}
+
+.membership--container .membership__box .layout .form--container .trigers button:hover {
+  font-weight: 800;
+}
+
+.membership--container .membership__box .layout .form--container .sign__in {
+  width: 100%;
+}
+
+.membership--container .membership__box .layout .form--container .sign__in form .inputs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 8%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.membership--container .membership__box .layout .form--container .sign__in form .inputs input {
+  margin: 1%;
+  padding-bottom: 1rem;
+  width: 100%;
+  height: 2.5rem;
+  border: none;
+  border-left: 3px solid #107dd6;
+  border-radius: 5px;
+  outline: none;
+  margin-bottom: 3%;
+}
+
+.membership--container .membership__box .layout .form--container .sign__in form .inputs select {
+  margin: 1%;
+  padding-bottom: 0.4rem;
+  width: 100%;
+  height: 2.5rem;
+  border-radius: 5px;
+  border: none;
+  border-left: 3px solid #107dd6;
+  outline: none;
+}
+
+.membership--container .membership__box .layout .form--container .sign__in form .checkbox--container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 90%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 0.8rem;
+  margin-left: 5%;
+  margin-top: 5%;
+}
+
+.membership--container .membership__box .layout .form--container .sign__in form .checkbox--container .check--box {
+  color: #8f8e8e;
+}
+
+.membership--container .membership__box .layout .form--container .sign__in form .checkbox--container .forgot--text a {
+  color: #f0efef;
+  text-decoration: none;
+}
+
+.membership--container .membership__box .layout .form--container .sign__in form .btn {
+  margin-top: 3%;
+}
+
+.membership--container .membership__box .layout .form--container .sign__in form .btn button {
+  width: 350px;
+  height: 2.5rem;
+  background-color: #107dd6;
+  color: white;
+  font-size: 1rem;
+  padding: 0.3rem 1.5rem;
+  border: none;
+  border-radius: 4px;
+}
+
+.membership--container .membership__box .layout .form--container .sign__in form .btn button:hover {
+  cursor: pointer;
+  background-color: white;
+  color: #107dd6;
+}
+
+.membership--container .membership__box .layout .form--container .register {
+  width: 100%;
+}
+
+.membership--container .membership__box .layout .form--container .register form .inputs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 8%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.membership--container .membership__box .layout .form--container .register form .inputs input {
+  margin: 1%;
+  padding-bottom: 1rem;
+  width: 100%;
+  height: 2.5rem;
+  border: none;
+  border-left: 3px solid #107dd6;
+  border-radius: 5px;
+  outline: none;
+  margin-bottom: 3%;
+}
+
+.membership--container .membership__box .layout .form--container .register form .inputs select {
+  margin: 1%;
+  padding-bottom: 0.4rem;
+  width: 100%;
+  height: 2.5rem;
+  border-radius: 5px;
+  border: none;
+  border-left: 3px solid #107dd6;
+  outline: none;
+}
+
+.membership--container .membership__box .layout .form--container .register form .checkbox--container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 90%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 0.8rem;
+  margin-left: 5%;
+  margin-top: 5%;
+}
+
+.membership--container .membership__box .layout .form--container .register form .checkbox--container .check--box {
+  color: #8f8e8e;
+}
+
+.membership--container .membership__box .layout .form--container .register form .checkbox--container .forgot--text a {
+  color: #f0efef;
+  text-decoration: none;
+}
+
+.membership--container .membership__box .layout .form--container .register form .btn {
+  margin-top: 3%;
+}
+
+.membership--container .membership__box .layout .form--container .register form .btn button {
+  width: 350px;
+  height: 2.5rem;
+  background-color: #107dd6;
+  color: white;
+  font-size: 1rem;
+  padding: 0.3rem 1.5rem;
+  border: none;
+  border-radius: 4px;
+}
+
+.membership--container .membership__box .layout .form--container .register form .btn button:hover {
+  cursor: pointer;
+  background-color: white;
+  color: #107dd6;
+}
+
+.membership--container .membership__box footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 500px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: white;
+  margin-top: 3.9%;
+  margin-left: 25%;
+}
+
+.membership--container .membership__box footer p {
+  opacity: 0.5;
+}
+/*# sourceMappingURL=Membership.css.map */
